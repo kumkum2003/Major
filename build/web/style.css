@@ -1,0 +1,108 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    overflow-y: auto; /* Make the page scrollable */
+    max-height: 80vh; /* Adjusts the maximum height of the main section */
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured-plots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    grid-auto-rows: minmax(200px, auto); /* Ensures consistent height of the cards */
+    overflow-y: scroll; /* Allow scrolling within the container */
+    max-height: 60vh; /* Limit height and allow scrolling */
+}
+
+.plot-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.plot-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.plot-card h4 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.plot-card p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.plot-card a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.plot-card a:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
