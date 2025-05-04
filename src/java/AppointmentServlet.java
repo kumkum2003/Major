@@ -14,7 +14,7 @@ public class AppointmentServlet extends HttpServlet {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/realestate";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Root";
+    private static final String DB_PASSWORD = "";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
